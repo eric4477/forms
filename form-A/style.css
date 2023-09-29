@@ -96,13 +96,15 @@ h3 {
 
 .radio-inputs {
   margin-top: 1.2rem;
+  margin-left: -7px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 6rem;
 }
 .custom-radio {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: 30px;
   white-space: nowrap;
@@ -117,10 +119,10 @@ h3 {
 .custom-radio label:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
+  left: 6px;
+  top: 1px;
+  width: 16px;
+  height: 16px;
 
   background-color: rgb(203, 202, 202);
   border-radius: 50%;
@@ -128,4 +130,29 @@ h3 {
 
 .custom-radio input[type="radio"]:checked + label:before {
   background-color: #1860dd;
+}
+
+button {
+  margin-top: 2.5rem;
+  padding: 0.8rem;
+  width: 100%;
+  text-align: center;
+  background: rgb(255, 184, 1);
+  background: linear-gradient(
+    329deg,
+    rgba(255, 184, 1, 1) 0%,
+    rgba(255, 210, 93, 1) 0%,
+    rgba(255, 168, 101, 1) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1860dd;
 }
