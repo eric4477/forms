@@ -1,0 +1,88 @@
+body {
+  padding-top: 2rem;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: rgb(255, 184, 1);
+  background: linear-gradient(
+    329deg,
+    rgba(255, 184, 1, 1) 0%,
+    rgba(255, 210, 93, 1) 0%,
+    rgba(255, 168, 101, 1) 100%
+  );
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  width: 41.5rem;
+  height: 40rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-title {
+  font-weight: 500;
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.form-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 0.2rem;
+  width: 2rem;
+  background: rgb(255, 184, 1);
+}
+
+.text-inputs-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+.text-input label {
+  font-weight: 500;
+}
+
+.text-input input {
+  padding: 0.7rem 0.6rem;
+  width: 17.5rem;
+  border: 1px solid rgb(187, 187, 187);
+  border-bottom: 2px solid rgb(187, 187, 187);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.text-input input:active,
+.text-input input:focus {
+  outline: none;
+}
+
+.text-input input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+}
