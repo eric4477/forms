@@ -1,6 +1,6 @@
 body {
   padding-top: 6rem;
-  height: 100vh;
+
   background-color: whitesmoke;
   font-family: "Onest", sans-serif;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 .form-container {
-  width: 50rem;
+  width: 47rem;
   height: 30rem;
   margin: 0 auto;
   display: flex;
@@ -25,6 +25,88 @@ body {
   border-bottom-left-radius: 10px;
   flex-basis: 50%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-title {
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-weight: 550;
+}
+.social-media-container {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 15px;
+}
+.facebook,
+.google,
+.linkedin {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(60, 183, 216);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.facebook:hover,
+.google:hover,
+.linkedin:hover {
+  background-color: rgb(42, 186, 189);
+}
+
+.email {
+  margin-top: 1.6rem;
+}
+
+.password {
+  margin-top: 1rem;
+}
+
+.email,
+.password {
+  width: 75%;
+  background-color: rgb(233, 233, 233);
+  padding: 0.7rem 0.7rem;
+  text-align: left;
+  border: none;
+}
+
+.email:active,
+.email:focus,
+.password :active,
+.password:focus {
+  outline: none;
+}
+
+.sign-in-container h5 {
+  font-weight: 500;
+  margin-top: 1.4rem;
+}
+
+.sign-in-btn {
+  border-radius: 20px;
+  margin-top: 0.8rem;
+  border: 0.5px solid rgb(60, 183, 216);
+  background-color: rgb(42, 186, 189);
+  padding: 0.7rem 2.4rem;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.sign-in-btn:hover {
+  background-color: rgb(19, 163, 203);
 }
 
 .sign-up-container {
@@ -49,7 +131,7 @@ body {
 .sign-up-text {
   margin-top: 1rem;
   color: rgb(243, 243, 243);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -67,7 +149,7 @@ body {
   transition: all 0.5s;
 }
 .sign-up-btn:hover {
-  background-color: rgb(21, 94, 101);
+  background-color: rgb(41, 193, 196);
 }
 .sign-up-btn:focus,
 .sign-up-btn:active {
